@@ -27,8 +27,8 @@ def factorial_recursive(n):
     return factorial_recursive(n - 1) * n
 
 
-for i in range (10):
-    print(factorial_recursive(i))
+for i in range (800):
+    print(i,factorial_recursive(i))
 
 """fact(5):
     fact(4):
