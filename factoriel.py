@@ -1,8 +1,7 @@
 numbers = []
 
-
+"""
 def factorial():
-    global exp
     for n in range(10):
         numbers.append(n)
         location = numbers.index(n)
@@ -17,3 +16,30 @@ def factorial():
 
 
 factorial()
+"""
+
+exp = 1
+
+
+def factorial_recursive(n):
+    if n == 0:
+        return 1
+    return factorial_recursive(n - 1) * n
+
+
+for i in range (10):
+    print(factorial_recursive(i))
+
+"""fact(5):
+    fact(4):
+        fact(3):
+            fact(2):
+                fact(1):
+                    fact(0):
+                        1
+                    1
+                2
+            6
+        2
+        
+        """
